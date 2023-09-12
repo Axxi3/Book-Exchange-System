@@ -30,17 +30,20 @@ router.get('/getcategorybooks/:name',cors(), async (req, res) => {
 
   router.post('/postBooks', cors(), async (req, res) => {
       try {
-          const { coverPic,CategoryName, BooksImages, Ownerid } = req.body;  
+          const { coverPic,CategoryName, BooksImages, Ownerid ,Author,quantity,Publish_year,name} = req.body;  
           
           
           // Assuming 'images' is your Mongoose model for storing book data
           await images.create({  
             coverPic,  
-            CategoryName,   
+            CategoryName,     
             Location:"Guwahati",   
             Ownerid,
-            BooksImages: BooksImages // Store each base64 image as an object
-          
+            BooksImages: BooksImages ,// Store each base64 image as an object
+            Author, 
+            quantity, 
+            Publish_year, 
+            name
           });
   
           res.status(201).json({ success:true,message: 'Book data saved successfully' });

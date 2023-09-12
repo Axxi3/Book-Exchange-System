@@ -11,11 +11,11 @@ const Product =new Schema(  {
        required:true
     },  
     quantity: { 
-        type:String, 
+        type:Number, 
        required:true
     }, 
     Publish_year: { 
-        type:String, 
+        type:Number, 
        required:true
     },
     CategoryName: { 
