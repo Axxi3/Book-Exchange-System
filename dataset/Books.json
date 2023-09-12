@@ -1,0 +1,273 @@
+[
+    {
+      "CategoryName": "UG Degree 1st Semester",
+      "Books": [
+        {
+          "Name": "Book 1",
+          "Author": "Author 1",
+          "Image": "https://example.com/book1.jpg"
+        },
+        {
+          "Name": "Book 2",
+          "Author": "Author 2",
+          "Image": "https://example.com/book2.jpg"
+        },
+        {
+          "Name": "Book 3",
+          "Author": "Author 3",
+          "Image": "https://example.com/book3.jpg"
+        },
+        {
+          "Name": "Book 4",
+          "Author": "Author 4",
+          "Image": "https://example.com/book4.jpg"
+        },
+        {
+          "Name": "Book 5",
+          "Author": "Author 5",
+          "Image": "https://example.com/book5.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "UG Degree 2nd Semester",
+      "Books": [
+        {
+          "Name": "Book 6",
+          "Author": "Author 6",
+          "Image": "https://example.com/book6.jpg"
+        },
+        {
+          "Name": "Book 7",
+          "Author": "Author 7",
+          "Image": "https://example.com/book7.jpg"
+        },
+        {
+          "Name": "Book 8",
+          "Author": "Author 8",
+          "Image": "https://example.com/book8.jpg"
+        },
+        {
+          "Name": "Book 9",
+          "Author": "Author 9",
+          "Image": "https://example.com/book9.jpg"
+        },
+        {
+          "Name": "Book 10",
+          "Author": "Author 10",
+          "Image": "https://example.com/book10.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "UG Degree 3rd Semester",
+      "Books": [
+        {
+          "Name": "Book 11",
+          "Author": "Author 11",
+          "Image": "https://example.com/book11.jpg"
+        },
+        {
+          "Name": "Book 12",
+          "Author": "Author 12",
+          "Image": "https://example.com/book12.jpg"
+        },
+        {
+          "Name": "Book 13",
+          "Author": "Author 13",
+          "Image": "https://example.com/book13.jpg"
+        },
+        {
+          "Name": "Book 14",
+          "Author": "Author 14",
+          "Image": "https://example.com/book14.jpg"
+        },
+        {
+          "Name": "Book 15",
+          "Author": "Author 15",
+          "Image": "https://example.com/book15.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "UG Degree 4th Semester",
+      "Books": [
+        {
+          "Name": "Book 16",
+          "Author": "Author 16",
+          "Image": "https://example.com/book16.jpg"
+        },
+        {
+          "Name": "Book 17",
+          "Author": "Author 17",
+          "Image": "https://example.com/book17.jpg"
+        },
+        {
+          "Name": "Book 18",
+          "Author": "Author 18",
+          "Image": "https://example.com/book18.jpg"
+        },
+        {
+          "Name": "Book 19",
+          "Author": "Author 19",
+          "Image": "https://example.com/book19.jpg"
+        },
+        {
+          "Name": "Book 20",
+          "Author": "Author 20",
+          "Image": "https://example.com/book20.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "UG Degree 5th Semester",
+      "Books": [
+        {
+          "Name": "Book 21",
+          "Author": "Author 21",
+          "Image": "https://example.com/book21.jpg"
+        },
+        {
+          "Name": "Book 22",
+          "Author": "Author 22",
+          "Image": "https://example.com/book22.jpg"
+        },
+        {
+          "Name": "Book 23",
+          "Author": "Author 23",
+          "Image": "https://example.com/book23.jpg"
+        },
+        {
+          "Name": "Book 24",
+          "Author": "Author 24",
+          "Image": "https://example.com/book24.jpg"
+        },
+        {
+          "Name": "Book 25",
+          "Author": "Author 25",
+          "Image": "https://example.com/book25.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "UG Degree 6th Semester",
+      "Books": [
+        {
+          "Name": "Book 26",
+          "Author": "Author 26",
+          "Image": "https://example.com/book26.jpg"
+        },
+        {
+          "Name": "Book 27",
+          "Author": "Author 27",
+          "Image": "https://example.com/book27.jpg"
+        },
+        {
+          "Name": "Book 28",
+          "Author": "Author 28",
+          "Image": "https://example.com/book28.jpg"
+        },
+        {
+          "Name": "Book 29",
+          "Author": "Author 29",
+          "Image": "https://example.com/book29.jpg"
+        },
+        {
+          "Name": "Book 30",
+          "Author": "Author 30",
+          "Image": "https://example.com/book30.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "HS - Science",
+      "Books": [
+        {
+          "Name": "Science Book 1",
+          "Author": "Science Author 1",
+          "Image": "https://example.com/science-book1.jpg"
+        },
+        {
+          "Name": "Science Book 2",
+          "Author": "Science Author 2",
+          "Image": "https://example.com/science-book2.jpg"
+        },
+        {
+          "Name": "Science Book 3",
+          "Author": "Science Author 3",
+          "Image": "https://example.com/science-book3.jpg"
+        },
+        {
+          "Name": "Science Book 4",
+          "Author": "Science Author 4",
+          "Image": "https://example.com/science-book4.jpg"
+        },
+        {
+          "Name": "Science Book 5",
+          "Author": "Science Author 5",
+          "Image": "https://example.com/science-book5.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "HS - Commerce",
+      "Books": [
+        {
+          "Name": "Commerce Book 1",
+          "Author": "Commerce Author 1",
+          "Image": "https://example.com/commerce-book1.jpg"
+        },
+        {
+          "Name": "Commerce Book 2",
+          "Author": "Commerce Author 2",
+          "Image": "https://example.com/commerce-book2.jpg"
+        },
+        {
+          "Name": "Commerce Book 3",
+          "Author": "Commerce Author 3",
+          "Image": "https://example.com/commerce-book3.jpg"
+        },
+        {
+          "Name": "Commerce Book 4",
+          "Author": "Commerce Author 4",
+          "Image": "https://example.com/commerce-book4.jpg"
+        },
+        {
+          "Name": "Commerce Book 5",
+          "Author": "Commerce Author 5",
+          "Image": "https://example.com/commerce-book5.jpg"
+        }
+      ]
+    },
+    {
+      "CategoryName": "HS - Arts",
+      "Books": [
+        {
+          "Name": "Arts Book 1",
+          "Author": "Arts Author 1",
+          "Image": "https://example.com/arts-book1.jpg"
+        },
+        {
+          "Name": "Arts Book 2",
+          "Author": "Arts Author 2",
+          "Image": "https://example.com/arts-book2.jpg"
+        },
+        {
+          "Name": "Arts Book 3",
+          "Author": "Arts Author 3",
+          "Image": "https://example.com/arts-book3.jpg"
+        },
+        {
+          "Name": "Arts Book 4",
+          "Author": "Arts Author 4",
+          "Image": "https://example.com/arts-book4.jpg"
+        },
+        {
+          "Name": "Arts Book 5",
+          "Author": "Arts Author 5",
+          "Image": "https://example.com/arts-book5.jpg"
+        }
+      ]
+    }
+  ]
+  
