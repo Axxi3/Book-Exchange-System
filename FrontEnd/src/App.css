@@ -1,15 +1,14 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=VT323&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=VT323&display=swap");
 .app {
   /* text-align: center; */
   margin: 0 auto;
-  width: 50%;    
-  display: flex;  
-  flex-direction: column;  
-  justify-content: center;  
-  align-items: center;  
-  height: 80vh;  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
   gap: 30px;
 }
 
@@ -24,191 +23,204 @@
   margin-top: 5px;
 }
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}  
-.login{  
-  display: flex;  
-  justify-content: center;   
-  height: 100vh;      
+}
+.login {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
   gap: 20px;
   flex-direction: column;
-  background-image: url(../src/images/5208122.jpg) ;
+  background-image: url(../src/images/5208122.jpg);
   align-items: center;
-  font-family:"VT323", sans-serif;
-}   
+  font-family: "VT323", sans-serif;
+}
 
-.login h1{ 
+.login h1 {
   font-size: 3rem;
-}    
-.login h1:hover{ 
-  letter-spacing: 10px;  
+}
+.login h1:hover {
+  letter-spacing: 10px;
   transition: letter-spacing 0.4s;
 }
-.login form{ 
+.login form {
   width: 60vw;
-}  
-.login form label { 
+}
+.login form label {
   font-size: 1.3rem;
-}  
-.choosebutton{ 
-  width: 50%;  
-  background-color: #B4976C; 
-  border-color: #B4976C;  
+}
+.choosebutton {
+  width: 50%;
+  background-color: #b4976c;
+  border-color: #b4976c;
   font-size: 1.5rem;
-}  
-
-.nav ul{ 
-  list-style: none;  
-  display: flex;  
-  gap :30px; 
-  justify-content: center;  
-  align-items: center;   
-  font-size: 1.3rem; 
+}
+.nav {
+  position: relative;
+}
+.nav ul {
+  list-style: none;
+  display: none;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
   margin-bottom: 0px;
-}        
+}
+.nav ul.open {
+  display: flex;
+}
 
-.navham{ 
+.navham {
   display: none;
 }
-.nav ul li a{ 
-  text-decoration: none;  
+.nav ul li a {
+  text-decoration: none;
   color: #000;
 }
-.nav ul li:hover{ 
-  text-decoration: underline;  
+.nav ul li:hover {
+  text-decoration: underline;
   transform: text-decoration 0.5s;
-} 
-.nav h3{ 
-  font-weight: 600;  
-  font-size: 1.8rem;  
+}
+.nav h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
   margin-left: 10px;
 }
-.nav{     
-  font-family:"VT323", sans-serif;
+.nav {
+  font-family: "VT323", sans-serif;
   padding-top: 10px;
-  display: flex;      
-  padding-bottom: 10px;  
-  background-color: #F5F2EE;
+  display: flex;
+  padding-bottom: 10px;
+  background-color: #f5f2ee;
   border-bottom: 1px solid black;
   justify-content: space-between;
-}  
-.nav form input{ 
-  background-color: #F5F2EE;
-}  
-.hero{   
-  width: 100vw;   
- 
-  font-family: 'Oswald', Times, serif;   
-  background-color: #F5F2EE;
+}
+.nav form input {
+  background-color: #f5f2ee;
+}
+.d-flex {
+  margin: 0 0.25rem;
+}
+.hero {
+  width: 100vw;
+  /* temporary-make this responsive */
+  overflow: hidden;
+
+  font-family: "Oswald", Times, serif;
+  background-color: #f5f2ee;
   justify-content: space-between;
   display: flex;
-}  
-.text{   
-  width: 50vw;  
-  display: flex; 
-  flex-direction: column;  
-  gap: 10px;  
-  align-items: center;  
+}
+.text {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
   justify-content: center;
-}    
-.text button{ 
-  background-color: #FBC82A;  
-  font-size: 1.3rem;  
-  
-}  
-.text button:hover{ 
+}
+.text button {
+  background-color: #fbc82a;
+  font-size: 1.3rem;
+}
+.text button:hover {
   transform: box-shadow 0.5s;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.img{   
-  
+.img {
   margin-right: 10px;
-}    
-.hero2{ 
-  background-color: #b424f7;    
+}
+.hero2 {
+  background-color: #b424f7;
   padding: 30px;
-}  
+}
 
-.hero2 ul{ 
-  display: flex  ;  
-  list-style: none;    
+.hero2 ul {
+  display: flex;
+  list-style: none;
   color: #ffffff;
-  justify-content: space-between;  
-}  
-.icons{ 
-  height: 50px;  
+  justify-content: space-between;
+}
+.icons {
+  height: 50px;
   width: 50px;
-}  
-.points{ 
-  display: flex;  
-  flex-direction: column;  
-  align-items: center;  
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-}    
-.main h1{ 
-  text-align: center;  
-  margin: 20px;  
-  font-family:"Oswald", sans-serif;
+}
+.main {
+  /* temporary-make this responsive */
+  overflow: hidden;
+}
+.main h1 {
+  text-align: center;
+  margin: 20px;
+  font-family: "Oswald", sans-serif;
 }
 .images {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   padding: 20px;
 }
 
 .images > * {
-  flex-basis: calc(25% - 20px); /* 25% width with 20px gap to show 4 items in a row */
-  max-width: calc(25% - 20px); /* Optional: Set a max-width to prevent items from growing too wide */
+  flex-basis: calc(
+    25% - 20px
+  ); /* 25% width with 20px gap to show 4 items in a row */
+  max-width: calc(
+    25% - 20px
+  ); /* Optional: Set a max-width to prevent items from growing too wide */
 }
 
-.carder{ 
-  width: 15rem;  
-}  
-.carder:hover{ 
- 
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 1);   
+.carder {
+  width: 15rem;
+}
+.carder:hover {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 1);
   transition: box-shadow 0.4s;
 }
-.bookpic{ 
-  height: 500px;  
-  width: 30%;  
-}  
-.bookpic2{ 
-  height: 350px;  
-  width: 30%;  
-}  
-.Bookofthemonthbg{ 
-  display: flex;  
-  color: white;   
-  padding: 50px;   
- 
+.bookpic {
+  height: 500px;
+  width: 30%;
+}
+.bookpic2 {
+  height: 350px;
+  width: 30%;
+}
+.Bookofthemonthbg {
+  display: flex;
+  color: white;
+  padding: 50px;
+
   justify-content: space-around;
   background-color: black;
-}    
-.Bookofthemonthbg img{ 
+}
+.Bookofthemonthbg img {
   border: 20px;
 }
-.right{   
+.right {
   width: 100%;
-  display: flex;    
+  display: flex;
   gap: 20px;
-  flex-direction: column;  
-  justify-content: center;  
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}  
-
+}
 
 /* Footer.css */
 .footer {
   background-color: #333;
   color: white;
- padding-top: 10px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -219,101 +231,95 @@
 }
 
 .copyright {
-  
   font-size: 14px;
 }
-.DragDrop{ 
+.DragDrop {
   height: 500px;
-}  
-
-.category{ 
-  font-family: "Oswald", sans-serif;  
-}  
-.category h1{ 
-  text-align: center;  
-  padding-bottom: 15px; 
 }
 
-.categories ul{   
+.category {
+  font-family: "Oswald", sans-serif;
+}
+.category h1 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.categories ul {
   list-style: none;
-  display: flex;  
-  flex-wrap: wrap;   
-  justify-content: center;  
-  align-items: center ; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-}    
-.categories ul li{   
-  text-align: center;  
+}
+.categories ul li {
+  text-align: center;
   padding: 10px;
-  border: 2px solid black;  
-  border-radius: 20px;  
-  background-color: #F5F2EE;
-}    
-.categories a{ 
-  text-decoration: none;  
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #f5f2ee;
+}
+.categories a {
+  text-decoration: none;
   color: #000;
 }
-.categories ul li:hover{ 
+.categories ul li:hover {
   cursor: pointer;
 }
 .categories ul > * {
-  flex-basis: calc(33% - 20px); /* 25% width with 20px gap to show 4 items in a row */
-  max-width: calc(33% - 20px); /* Optional: Set a max-width to prevent items from growing too wide */
-}  
-.newuser p { 
-font-size: 1.8rem;
-}  
-.preview{ 
-  height: 200px;  
-}  
-.dropper{ 
-  all: unset;  
-  display: block;    
-  border: 2px black dotted;  
-  padding: 100px;  
-  
+  flex-basis: calc(
+    33% - 20px
+  ); /* 25% width with 20px gap to show 4 items in a row */
+  max-width: calc(
+    33% - 20px
+  ); /* Optional: Set a max-width to prevent items from growing too wide */
+}
+.newuser p {
+  font-size: 1.8rem;
+}
+.preview {
+  height: 200px;
+}
+.dropper {
+  all: unset;
+  display: block;
+  border: 2px black dotted;
+  padding: 100px;
+
   width: 50%;
-}      
-.product-Adder h1{ 
-  font-family:"VT323", sans-serif;  
- 
-}    
-.namer{ 
-  display: flex;  
+}
+.product-Adder h1 {
+  font-family: "VT323", sans-serif;
+}
+.namer {
+  display: flex;
   gap: 40px;
 }
-.Choose-class{ 
+.Choose-class {
   padding-bottom: 50px;
 }
-.product-Adder{   
-  width: 100vw;  
+.product-Adder {
+  width: 100vw;
   height: 150vh;
-  display: flex;    
+  display: flex;
   background-image: url(../src/images/5208122.jpg);
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
-
-}     
-
-
-
-
-
-
-
+}
 
 .drag-drop-container {
   border: 2px dashed #ccc;
   padding: 50px;
   text-align: center;
-  cursor: pointer;  
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
 /* Style the hover state */
-.drag-drop-container:hover {  
+.drag-drop-container:hover {
   transition: background-color 0.5s;
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 /* Hide the file input */
@@ -322,7 +328,7 @@ input[type="file"] {
 }
 
 /* Style the label */
-  .drag-drop-container label {
+.drag-drop-container label {
   display: block;
   background-color: #3498db;
   color: #fff;
@@ -331,39 +337,43 @@ input[type="file"] {
   cursor: pointer;
 }
 
-.imagesbutt{ 
-  padding: 10px;  
-  border-radius: 10px;  
-  background-color: #24c9f7;  
- 
-}    
+.imagesbutt {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #24c9f7;
+}
 
-.selfinfo { 
-  display: flex; 
-  align-items: center;    
-  font-family: 'Oswald', Times, serif;   
+.selfinfo {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", Times, serif;
   justify-content: space-evenly;
 }
 
-.account h1{ 
-  text-align: center;  
-  font-family: 'Oswald', Times, serif;   
-  padding: 20px;   
+.account h1 {
+  text-align: center;
+  font-family: "Oswald", Times, serif;
+  padding: 20px;
 }
 
-.pfp{ 
-  
+.pfp {
   height: 20%;
   width: 20%;
-margin-left: 20px;  
-margin-top: 20px;  
-display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: block;
 }
 
-.books-Images{ 
-  display: flex;  
+.books-Images {
+  display: flex;
   gap: 20px;
 }
+li a {
+  color: #ffffff !important;
+}
+@media (max-width: 550px) and (prefers-reduced-motion: no-preference) {
+  /* Media query for smaller screens */
+=======
 
 .About_us_heading{     
   margin-top: 20px;
@@ -387,7 +397,7 @@ justify-content: center;
 
 
 
-@media (max-width: 550px) and (prefers-reduced-motion: no-preference) {   
+
   
 
 
@@ -400,6 +410,7 @@ justify-content: center;
 
 /* Media query for smaller screens */
 
+
   .navham {
     display: block; /* Display the hamburger icon */
   }
@@ -409,8 +420,8 @@ justify-content: center;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    top: 100%; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
     background-color: #333;
     width: 200px; /* Adjust as needed */
     padding: 10px;
@@ -433,20 +444,18 @@ justify-content: center;
     margin: 10px 0;
   }
 
-
-
   .app {
-    /* text-align: center; */  
+    /* text-align: center; */
     text-align: center;
     margin: 0px;
     width: 100%;
   }
-  .App-logo {  
+  .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }  
-  .login h1{ 
+  }
+  .login h1 {
     font-size: 1.7rem;
-  }  
+  }
 }
 
 .App-header {
@@ -464,10 +473,18 @@ justify-content: center;
   color: #61dafb;
 }
 
-
-
-
 ::-webkit-scrollbar {
   width: 0; /* Hide horizontal scrollbar */
   height: 0; /* Hide vertical scrollbar */
+}
+
+@media screen and (min-width: 550px) {
+  .nav ul {
+    display: flex;
+    margin-right: 0.25rem;
+  }
+  li a {
+    text-decoration: none;
+    color: #000 !important;
+  }
 }
