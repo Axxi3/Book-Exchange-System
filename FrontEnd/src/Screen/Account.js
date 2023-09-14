@@ -4,12 +4,15 @@ import { decodeToken } from "react-jwt";
 import Card from "../components/Card";
 import Loader from "../components/Loader";
 export default function Account() {
-  const [images, setimages] = useState([]);
-  const [auth, setauth] = useState("");  
+  const [images, setimages] = useState([]);  
+  const [Authorname,setAuthorname]=useState([]);
+  const [auth, setauth] = useState("");    
+  const [Bookname,setBookname]=useState([])
   const [pfp, setpfp] = useState("");  
   const [name, setname] = useState("");  
   const [load,setLoad]=useState(true)
-  const [time,setTime]=useState(0)
+
+
   const [initialized, setInitialized] = useState(false);
 
   
@@ -63,7 +66,9 @@ export default function Account() {
       console.log(data.length);
   
       data.map((item) => {
-        setimages((prevImages) => [...prevImages, item.coverPic]);
+        setimages((prevImages) => [...prevImages, item.coverPic]);  
+        setBookname((prevBook=>[...prevBook,item.name]))  
+        setAuthorname((prevName)=>[...prevName,item.Author])
         return null; 
       });
     } catch (error) {
@@ -97,9 +102,11 @@ export default function Account() {
       load===true ? <Loader/>: null
       }
       { 
-        load===false && images.length !== 0 ? images.map((data)=>{ 
+        load===false && images.length !== 0 ? images.map((data,index)=>{   
+         
           return( 
-              <Card link={data}/>
+              <Card link={data} author={Authorname[index]} name={Bookname[index]}/>  
+             
           )
         }) : null  
         // images.length !== 0 ? console.log(images.length) :null

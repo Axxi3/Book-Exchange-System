@@ -25,8 +25,9 @@ function App() {
     <Route exact path="/choose" element={<Choose/>}/>   
     <Route exact path="/addproduct" element={<Addproduct/>}/>   
     <Route exact path="/category" element={<Category/>}/>      
-    <Route exact path="/aboutus" element={<Aboutus/>}/>     
-    <Route exact path="/account" element={<Account/>}/>
+      
+    <Route exact path="/account" element={<Account/>}/>  
+    <Route exact path="/contactus" element={<Aboutus/>}/>
     </Routes>
    </Router>
    

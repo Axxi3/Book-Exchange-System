@@ -1,5 +1,6 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import {  decodeToken } from "react-jwt";
+import Loader from '../components/Loader';
 export default function Addproduct() {      
   const[auth,setauth]=useState("") 
   const [imageStack, setImageStack] = useState([]);   // Initialize an empty stack for storing base64 images
@@ -9,7 +10,8 @@ export default function Addproduct() {
    Publish_year:"", 
     name:"" , 
     class:""
-  })       
+  })         
+  const [load,setload]=useState(false)
   const changeValue=(event)=> { 
     setcredentials({...credentials,[event.target.name]:event.target.value})    
     console.log({...credentials,[event.target.name]:event.target.value})
@@ -70,7 +72,8 @@ console.log(imageStack)
     console.log(imageStack.length)
   };  
 
-  const submitHogaya=async ()=>{   
+  const submitHogaya=async ()=>{    
+    setload(true) 
     console.log("proccess Started")
     const respo=await fetch("http://localhost:5000/postBooks",{ 
       method:"POST",
@@ -81,7 +84,11 @@ console.log(imageStack)
         Ownerid:auth, 
         CategoryName:credentials.class, 
         BooksImages:imageStack, 
-        coverPic:imageStack[0]
+        coverPic:imageStack[0],
+        Author:credentials.Author, 
+        quantity:credentials.quantity, 
+        Publish_year:credentials.Publish_year , 
+        name:credentials.name
       })
     })   
     console.log("proccess Started 2")
@@ -89,26 +96,39 @@ console.log(imageStack)
     console.log("proccess Started 2") 
     console.log(res)  
     if(res.success){ 
-      setImageStack([])
+      setImageStack([])  
+
+      setload(false)
     }
   }
 
 
-  return (
-    <form className='product-Adder'>  
+  return (  
+
+<> 
+
+
+      { 
+      load===true ? <div className="images" id='book'>
+      <Loader/>
+      </div> : null
+      }
+
+    { 
+      load === false ?  <form className='product-Adder'>     
       <h1>Hey Anurag!</h1>    
       <div className="mb-4 namer">
- <label htmlFor="formGroupExampleInput" className="form-label">Seller Name</label>
- <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Type your name" name='name' value={credentials.name} onChange={changeValue}/> 
+ <label htmlFor="formGroupExampleInput" className="form-label">Book Name</label>
+ <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Type Book name" name='name' value={credentials.name} onChange={changeValue}/> 
  <label htmlFor="formGroupExampleInput" className="form-label">Author Name</label>
- <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Type your name" name='Author' value={credentials.Author} onChange={changeValue}/>
+ <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Type Author name" name='Author' value={credentials.Author} onChange={changeValue}/>
 </div>    
 
 <div className="mb-4 namer">  
 <label htmlFor="formGroupExampleInput" className="form-label">Publishing Year</label>
- <input type="Year" className="form-control" id="formGroupExampleInput" placeholder="Type your name" name='Publish_year' value={credentials.Publish_year} onChange={changeValue}/>  
+ <input type="Year" className="form-control" id="formGroupExampleInput" placeholder="Type Publishing" name='Publish_year' value={credentials.Publish_year} onChange={changeValue}/>  
  <label htmlFor="formGroupExampleInput" className="form-label">Quantity</label>
- <input type="Number" className="form-control" id="formGroupExampleInput" placeholder="Type your name" name='quantity' value={credentials.quantity} onChange={changeValue}/>
+ <input type="Number" className="form-control" id="formGroupExampleInput" placeholder="Total Quantity you have" name='quantity' value={credentials.quantity} onChange={changeValue}/>
  
    </div>  
 
@@ -147,6 +167,8 @@ console.log(imageStack)
      
 
 
-    </form>
+    </form> : null
+    }
+   </>
   );
 }
