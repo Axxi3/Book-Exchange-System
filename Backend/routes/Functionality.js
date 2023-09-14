@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Document = require('../models/Books')   
+const Document = require('../models/Books')    
+const { body, validationResult } = require('express-validator'); 
 const images=require("../models/Product")  
-const cors = require('cors');     
+const cors = require('cors');    
+const complain=require("../models/ComplaningUsers")   
 
 router.get('/getcategorybooks/:name',cors(), async (req, res) => {
     const name = req.params.name;  
@@ -51,7 +53,27 @@ router.get('/getcategorybooks/:name',cors(), async (req, res) => {
           console.error(error);
           res.status(500).json({ error: 'Internal server error' });
       }
-  });
+  }); 
+
+
+  router.post("/complain",cors(),
+  body('name',"Please write your name").notEmpty(),
+  body('para', "Please Tell us more about it").isLength({ min: 30, max: 200 }),
+  body('email', 'Not a valid email').isEmail(),async(req,res)=>{ 
+    try {
+      
+
+      await complain.create({ 
+       name: req.body.name, 
+       email: req.body.email,
+        Complain:req.body.complain
+      })     
+      res.status(201).json({ success:true,message: 'Complain Submitted Successfully' });
+    } catch (error) {
+      console.error(error);
+          res.status(500).json({ error: 'Internal server error' });
+    }
+  })
    
   router.get('/getimages/:id',cors(), async (req, res) => {
     const id = req.params.id;  

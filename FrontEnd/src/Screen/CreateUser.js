@@ -143,7 +143,15 @@ const submitHogaya=async (e)=>{
  <div className="col-12 ">
    <button type="submit" className="btn btn-primary ">Sign in</button>
  </div>
-</form>  
+</form>
+
+<div className="newuser">
+          <p>
+            <NavLink exact to="/login">
+             Already have an account? Login
+            </NavLink>
+          </p>
+        </div>
 </div> 
    </div>
     </>

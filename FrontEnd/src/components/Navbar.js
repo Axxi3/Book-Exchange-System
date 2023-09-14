@@ -22,10 +22,13 @@ export default function Navbar() {
         <ul className={`menu-items ${menuOpen ? 'open' : ''}`}>
           <li><NavLink exact to="/" onClick={closeMenu}>Home</NavLink></li>
           <li><NavLink exact to="/category" onClick={closeMenu}>Categories</NavLink></li>
-          <li><NavLink exact to="/aboutus" onClick={closeMenu}>About us</NavLink></li>
+        
           <li><NavLink exact to="/contactus" onClick={closeMenu}>Contact us</NavLink></li>    
     { 
       auth!== null ?  <li><NavLink exact to="/account" onClick={closeMenu}>My Account</NavLink></li> : null
+    }  
+     { 
+      auth== null ?  <li><NavLink exact to="/login" onClick={closeMenu}>Login?</NavLink></li> : null
     }
 
          
