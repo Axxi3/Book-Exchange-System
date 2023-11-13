@@ -19,7 +19,7 @@ export default function Login() {
       if(auth!==null) { 
 navigate("/")
       }
-    },[])
+    },[navigate])
     const submitHogaya=async (e)=>{   
       e.preventDefault();       
       const respo=await fetch("http://localhost:5000/loginuser",{ 
