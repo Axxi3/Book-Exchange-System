@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Navbar from "../components/Navbar";
 import { decodeToken } from "react-jwt";
 import Card from "../components/Card";
@@ -9,7 +9,7 @@ export default function Account() {
   const [pfp, setpfp] = useState("");  
   const [name, setname] = useState("");  
   const [load,setLoad]=useState(true)
-  const [time,setTime]=useState(0)
+
   const [initialized, setInitialized] = useState(false);
 
   
@@ -19,7 +19,7 @@ export default function Account() {
     // console.log(storedCartData)
 
     if (auth === null) {
-      // This will still show the previous value of login (useState is asynchronous)
+      return;
     } else {
       const myDecodedToken = decodeToken(auth);
 
