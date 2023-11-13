@@ -365,6 +365,9 @@ display: block;
   gap: 20px;
 }
 
+.typed-cursor {  
+  height: 20px;
+}
 @media (max-width: 550px) and (prefers-reduced-motion: no-preference) {   
   
 
