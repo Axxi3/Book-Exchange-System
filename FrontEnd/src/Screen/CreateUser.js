@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink, useNavigate } from "react-router-dom";  
+import {  useNavigate } from "react-router-dom";  
 import DOMPurify from 'dompurify';
 export default function CreateUser() {  
     const navigate = useNavigate();
