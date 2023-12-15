@@ -17,6 +17,7 @@ export default function Account() {
     let auth = localStorage.getItem("authtoken");
     let id = "";
     // console.log(storedCartData)
+    console.log(auth)
 
     if (auth === null) {
       return;
