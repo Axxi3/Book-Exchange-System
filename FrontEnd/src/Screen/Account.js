@@ -5,7 +5,7 @@ import Card from "../components/Card";
 import Loader from "../components/Loader";
 export default function Account() {
   const [images, setimages] = useState([]);
-  const [auth, setauth] = useState("");  
+  const [auth, setauth] = useState(localStorage.getItem("authtoken"));  
   const [pfp, setpfp] = useState("");  
   const [name, setname] = useState("");  
   const [load,setLoad]=useState(true)
@@ -14,25 +14,25 @@ export default function Account() {
 
   
   if (!initialized) {
-    let auth = localStorage.getItem("authtoken");
+  
     let id = "";
     // console.log(storedCartData)
     console.log(auth)
 
     if (auth === null) {
-      return;
-    } else {
-      const myDecodedToken = decodeToken(auth);
+  return;
+} else {
+  const myDecodedToken = decodeToken(auth);
 
-      id = myDecodedToken.user.id;
-      setauth(id);
-      console.log(id);  
-      setpfp(myDecodedToken.user.pfp)   
-      setname(myDecodedToken.user.name) 
-      if (myDecodedToken !== null) {
-        // console.log(myDecodedToken.user.id)
-        // realtoken(myDecodedToken.user.id)
-      }
+  id = myDecodedToken.user.id;
+  setauth(id);
+  console.log(id);  
+  setpfp(myDecodedToken.user.pfp)   
+  setname(myDecodedToken.user.name) 
+  if (myDecodedToken !== null) {
+    // console.log(myDecodedToken.user.id)
+    // realtoken(myDecodedToken.user.id)
+  }
     }
     // console.log("hashcjhsvd"+auth)
     getImages(id);      
