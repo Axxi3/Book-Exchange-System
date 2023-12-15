@@ -9,7 +9,7 @@ export default function Card(props) {
     <h5 class="card-title">{props.name}</h5>   
 
     <p class="card-text">Written by {props.author}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#home" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
    </>
