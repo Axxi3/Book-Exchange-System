@@ -12,7 +12,7 @@ export default function Home() {
   return ( 
     <>
     <Navbar/> 
-    <div className="hero">   
+    <div className="hero" id="home>   
     <div className="text">
     <h1>Buy Books at a cheaper price</h1>  
     <p>Cheaper than your regular resell books buying market</p> 
